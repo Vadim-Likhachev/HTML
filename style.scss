@@ -1,0 +1,510 @@
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap');
+
+@import "mixin";
+@import "variable";
+@import "breakpoints";
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-size: 16px;
+    color: $color-grey;
+}
+
+#block1 {
+    @include orange-block;
+    padding-top: 59px;
+    height: 794px;
+
+    h1 {
+        @include font('Open Sans', normal, 800, 56px);
+        text-transform: uppercase;
+    }    
+}
+
+.wrap {
+    width: 100%;
+    max-width: 1180px;
+    @include margin-l-r-auto;
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    .main-header {
+        align-items: start;
+    }
+}
+
+.data {
+    @include font('Source Sans Pro', normal, normal, 19px);
+}
+
+.main-data {
+    text-transform: uppercase;
+}
+
+.human {
+    margin-top: 21px;
+
+    .human-img {
+        display: block;
+        @include margin-l-r-auto;
+    }
+}
+
+.first-layer {
+    position: relative;
+    z-index: 1;
+    margin-top: -562px;
+}
+
+.operating-sistem {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1065px;
+    @include margin-l-r-auto;
+
+    .ios-android {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .ios-text {
+        margin-top: 18px;
+    } 
+    
+    .android-text {
+        margin-top: 12px;
+    } 
+    
+    .operating-text {
+        @include font('Source Sans Pro', normal, bold, 24px);
+    }
+
+}
+
+.intro {
+    @include margin-l-r-auto;
+    max-width: 499px;
+    margin-top: -20px;
+}
+
+.heading {
+    display: flex;
+    flex-direction: column;
+
+    .choose {
+        @include font('Open Sans', normal, bold, 56px);
+        text-align: center;
+        letter-spacing: 0.845em;
+        text-transform: uppercase;
+    }
+    
+    .flutter {
+        @include font('Fira Sans', normal, 800, 128px);
+        text-align: center;
+        position: relative;
+        z-index: 2;
+        margin-top: -30px;
+    }
+    
+    .both {
+        @include font('Open Sans', normal, 800, 36px);
+        text-align: center;
+        letter-spacing: 0.35em;
+        text-transform: uppercase;
+        margin-top: -30px;
+    }
+}
+
+.button-register {
+    @include margin-l-r-auto;
+    display: block;
+    width: 186px;
+    height: 66px;
+    margin-top: 60px;
+    @include font('Open Sans', normal, 800, 17px);
+    text-align: center;
+    text-transform: uppercase;
+    background-color: #fff;
+    color: $color-grey;
+    border: none;
+
+    &:hover {
+        background: $background-orange;
+        cursor: pointer;
+        border: 2px solid black;
+        color: #fff;
+     }
+}
+
+.logo-black {
+    path {
+        fill: #000;
+    }
+}
+
+.main {
+    h2 {
+        @include font('Fira Sans', normal, 500, 36px);
+        text-align: center;
+        letter-spacing: 6px;
+        color: $color-grey;
+    }
+
+    #block3, #block5 {
+        h2 {
+            color: #fff;
+        }
+    }
+
+    #block2 {
+        h2 {
+            font-weight: normal;
+        }
+    }
+
+    #block3 {
+        background: $background-grey;
+    }
+
+    #block5 {
+        @include orange-block;
+    }
+    
+    .all-bloks {
+        width: 100%;
+        max-width: 1180px;
+        margin: 0 auto;
+        padding: 53px 0 109px 0;
+
+        p {
+            @include font('Source Sans Pro', normal, normal, 19px);
+        }
+    }
+}
+
+.main-register {
+    @include font('Open Sans', normal, 800, 14px);
+    text-align: center;
+    text-transform: uppercase;
+    color: $color-grey;
+
+    width: 146px;
+    height: 46px;
+    border: 1px solid $color-grey;
+    background:#fff;
+
+    &:hover {
+        cursor: pointer;
+        color: #fff;
+        background-color: $color-grey;
+    }
+}
+
+.block2-text {
+    @include margin-l-r-auto;
+    margin-top: 101px;
+    width: 700px;
+}
+
+.text-item {
+    @include font('Source Sans Pro', normal, normal, 19px);
+    line-height: 24px;
+    color: $color-grey;
+
+    &:last-child {
+        margin-top: 20px;
+     }
+}
+
+ .human-cards {
+     display: flex;
+     @include margin-l-r-auto;
+     justify-content: space-between;
+     margin-top: 119px;
+     height: 269px;
+
+     .item-card {
+        width: 341px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    } 
+
+    .card-img {
+        width: 166px;
+        display: block;
+        height: 145px;
+    }
+   
+    .cards-header {
+        @include font('Fira Sans', normal, 800, 24px);
+        text-transform: uppercase;
+        
+        text-align: center;
+        letter-spacing: -0.0366516px; 
+        color: $color-orange;
+    
+        margin-top: 10px;
+     }
+
+     .cards-text {
+        @include font('Source Sans Pro', normal, normal, 17px);
+        line-height: 24px;  
+        color: $color-grey;
+    
+        margin-top: 20px;
+     }
+   
+ }
+
+.black-register {
+    border: 1px solid #FFFFFF;
+    color: #FFFFFF;
+    background: $background-grey;
+
+    &:hover {
+        background: #FFFFFF;
+        color: black;
+    }
+}
+
+.course-info {
+    margin-top: 80px;
+    border: 1px solid #FFFFFF;
+    display: flex;
+    color: #fff;
+    flex-wrap: wrap;
+    padding-left: 69px;
+    gap: 48px 402px;
+    padding-top: 18px;
+    padding-bottom: 21px;
+
+    .info-heading {
+        @include font('Fira Sans', normal, 800, 48px);
+    }
+
+    p {
+        @include font('Fira Sans', normal, normal, 17px);
+        letter-spacing: -0.0326923px;
+        line-height: 20px;
+    }
+}
+
+.about-course {
+   width: 466px;
+}
+
+.about-text  {
+    margin-top: 31px;
+
+    p {
+        margin-bottom: 23px;
+    }
+
+}
+
+.where-text  {
+    margin-top: 31px;
+
+    span {
+        @include font('Fira Sans', normal, bold, 36px);
+        letter-spacing: -0.0326923px;
+    }
+
+}
+
+.location {
+    &:before {
+        content: url('/assets/img/Combined\ Shape@2x.svg');
+        height: 25px;
+        width: 18px;
+        margin-right: 5px;
+    }
+}    
+
+.first-span {
+    @include font('Source Sans Pro', normal, normal, 32px);
+    line-height: 40px;
+    letter-spacing: 13.2778px;
+    text-transform: uppercase;
+}
+
+.second-span {
+    @include font('Source Sans Pro', normal, bold, 121px);
+    line-height: 121px;
+    letter-spacing: -0.0871795px;
+    position: relative;
+    z-index: 1;
+    margin-top: -18px;
+}
+
+.when-text  {
+    margin-top: 30px;
+    display: flex;
+
+    p {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+
+        &:first-child {
+            margin-right: 290px;
+        }
+    }
+}
+
+.who-register {
+    background: $color-orange;
+    color: #fff;
+
+    &:hover {
+        cursor: pointer;
+        background: #fff;
+        color: $color-orange;
+        border: 2px solid black;
+    }
+}
+
+.block-who {
+    padding-bottom: 69px;
+}
+
+.get-text {
+    width: 700px;
+    @include margin-l-r-auto;
+    margin-top: 138px;
+}
+
+.get-list {
+    margin-bottom: 113px;
+}
+
+.list {
+    @include font('Fira Sans', normal, 500, 32px);
+    display: flex;
+    margin-left: 35px;
+    margin-top: 112px;
+    width: 1040px;
+    justify-content: space-between;
+}
+
+.ul-list {
+    display: flex;
+    margin-left: 35px;
+}
+
+.item {
+    @include font('Source Sans Pro', normal, normal, 19px);
+    display: block;
+    margin-top: 29px;
+}
+
+.list-item {
+    &:last-child {
+        margin-right: 0;
+    }
+
+    &:nth-child(2){
+        margin-left: 65px;
+    }
+}
+
+a {
+    color:white;
+  }
+
+  .organizers-text {
+      margin-top: 105px;
+      @include margin-l-r-auto;
+      width: 940px;
+  }
+
+  .organizers-text {
+    p {
+        @include font('Source Sans Pro', normal, 200, 16px);
+        margin-bottom: 37px;
+        line-height: 24px;
+    }
+  }
+
+  .footer {
+      padding-bottom: 61px;
+      max-width: 1180px;
+      @include margin-l-r-auto;
+  }
+
+  .social-media {
+      display: flex;
+      width: 940px;
+      @include margin-l-r-auto;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .socials {
+      display: flex;
+      list-style-type: none;
+      align-items: center;
+  }
+
+  .socials-item {
+      margin-right: 25px;
+  }
+
+  .socials-text {
+    @include font('Source Sans Pro', normal, normal, 16px);
+    line-height: 20px;
+    
+    color: #000000;
+  }
+
+  .explore {
+    width: 206px;
+    height: 46px;
+    @include font('Open Sans', normal, 800, 14px);
+    border: none;
+    
+    text-align: center;
+    text-transform: uppercase;
+  }
+
+  .copyright {
+      margin-top: 127px;
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+  }
+
+  .copy {
+    @include font('Source Sans Pro', normal, normal, 15px);
+    color: #000000;
+  }
+
+  .email {
+    @include font('Source Sans Pro', normal, normal, 20px);
+    text-align: right;
+    
+    color: $color-orange;
+  }
