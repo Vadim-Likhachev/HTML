@@ -1,37 +1,546 @@
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@800&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Fira+Sans:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@200&display=swap");
 * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
 }
 
 body {
-    font-size: 16px;
-    color: #4A4A4A;
+  font-size: 16px;
+  color: #4A4A4A;
 }
 
 #block1 {
-    background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5));
-    color: #ffffff
+  background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(/assets/img/bg_orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000;
+  background-size: cover;
+  color: #ffffff;
+  padding-top: 59px;
+  height: 794px;
 }
-
 #block1 h1 {
-    font-family: Open Sans;
-    font-weight: 800;
-    font-size: 56px;
-    text-transform: uppercase;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 56px;
+  text-transform: uppercase;
 }
 
-h2 {
-    font-family: Open Sans;
-    font-weight: 400;
-    font-size: 36px;
-    text-transform: uppercase;   
+.wrap {
+  width: 100%;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 0;
+  padding-right: 0;
 }
 
-#block2 h2, #block4 h2, #block6 h2 {
-    color: #000;
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header .main-header {
+  align-items: start;
 }
 
-#block3 h2, #block5 h2 {
-    color: #fff;
+.data {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
 }
+
+.main-data {
+  text-transform: uppercase;
+}
+
+.human {
+  margin-top: 21px;
+}
+.human .human-img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.first-layer {
+  position: relative;
+  z-index: 1;
+  margin-top: -562px;
+}
+
+.operating-sistem {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1065px;
+  margin-left: auto;
+  margin-right: auto;
+}
+.operating-sistem .ios-android {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.operating-sistem .ios-text {
+  margin-top: 18px;
+}
+.operating-sistem .android-text {
+  margin-top: 12px;
+}
+.operating-sistem .operating-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+}
+
+.intro {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 499px;
+  margin-top: -20px;
+}
+
+.heading {
+  display: flex;
+  flex-direction: column;
+}
+.heading .choose {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 56px;
+  text-align: center;
+  letter-spacing: 0.845em;
+  text-transform: uppercase;
+}
+.heading .flutter {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 128px;
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  margin-top: -30px;
+}
+.heading .both {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 0.35em;
+  text-transform: uppercase;
+  margin-top: -30px;
+}
+
+.button-register {
+  margin-left: auto;
+  margin-right: auto;
+  display: block;
+  width: 186px;
+  height: 66px;
+  margin-top: 60px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 17px;
+  text-align: center;
+  text-transform: uppercase;
+  background-color: #fff;
+  color: #4A4A4A;
+  border: none;
+}
+.button-register:hover {
+  background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(/assets/img/bg_orange.jpg);
+  cursor: pointer;
+  border: 2px solid black;
+  color: #fff;
+}
+
+.logo-black path {
+  fill: #000;
+}
+
+.main h2 {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 36px;
+  text-align: center;
+  letter-spacing: 6px;
+  color: #4A4A4A;
+}
+.main #block3 h2, .main #block5 h2 {
+  color: #fff;
+}
+.main #block2 h2 {
+  font-weight: normal;
+}
+.main #block3 {
+  background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(/assets/img/Yellow\ single.png);
+}
+.main #block5 {
+  background: linear-gradient(0deg, rgba(255, 133, 22, 0.5), rgba(255, 133, 22, 0.5)), url(/assets/img/bg_orange.jpg);
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-color: #000000;
+  background-size: cover;
+  color: #ffffff;
+}
+.main .all-bloks {
+  width: 100%;
+  max-width: 1180px;
+  margin: 0 auto;
+  padding: 53px 0 109px 0;
+}
+.main .all-bloks p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+}
+
+.main-register {
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #4A4A4A;
+  width: 146px;
+  height: 46px;
+  border: 1px solid #4A4A4A;
+  background: #fff;
+}
+.main-register:hover {
+  cursor: pointer;
+  color: #fff;
+  background-color: #4A4A4A;
+}
+
+.block2-text {
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 101px;
+  width: 700px;
+}
+
+.text-item {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  line-height: 24px;
+  color: #4A4A4A;
+}
+.text-item:last-child {
+  margin-top: 20px;
+}
+
+.human-cards {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  margin-top: 119px;
+  height: 269px;
+}
+.human-cards .item-card {
+  width: 341px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.human-cards .card-img {
+  width: 166px;
+  display: block;
+  height: 145px;
+}
+.human-cards .cards-header {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 24px;
+  text-transform: uppercase;
+  text-align: center;
+  letter-spacing: -0.0366516px;
+  color: #FF7E03;
+  margin-top: 10px;
+}
+.human-cards .cards-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  line-height: 24px;
+  color: #4A4A4A;
+  margin-top: 20px;
+}
+
+.black-register {
+  border: 1px solid #FFFFFF;
+  color: #FFFFFF;
+  background: linear-gradient(0deg, #353535, #353535), linear-gradient(0deg, rgba(51, 51, 51, 0.8), rgba(51, 51, 51, 0.8)), url(/assets/img/Yellow\ single.png);
+}
+.black-register:hover {
+  background: #FFFFFF;
+  color: black;
+}
+
+.course-info {
+  margin-top: 80px;
+  border: 1px solid #FFFFFF;
+  display: flex;
+  color: #fff;
+  flex-wrap: wrap;
+  padding-left: 69px;
+  gap: 48px 402px;
+  padding-top: 18px;
+  padding-bottom: 21px;
+}
+.course-info .info-heading {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 48px;
+}
+.course-info p {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 17px;
+  letter-spacing: -0.0326923px;
+  line-height: 20px;
+}
+
+.about-course {
+  width: 466px;
+}
+
+.about-text {
+  margin-top: 31px;
+}
+.about-text p {
+  margin-bottom: 23px;
+}
+
+.where-text {
+  margin-top: 31px;
+}
+.where-text span {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  letter-spacing: -0.0326923px;
+}
+
+.location:before {
+  content: url("/assets/img/Combined Shape@2x.svg");
+  height: 25px;
+  width: 18px;
+  margin-right: 5px;
+}
+
+.first-span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 32px;
+  line-height: 40px;
+  letter-spacing: 13.2778px;
+  text-transform: uppercase;
+}
+
+.second-span {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: bold;
+  font-size: 121px;
+  line-height: 121px;
+  letter-spacing: -0.0871795px;
+  position: relative;
+  z-index: 1;
+  margin-top: -18px;
+}
+
+.when-text {
+  margin-top: 30px;
+  display: flex;
+}
+.when-text p {
+  display: flex;
+  flex-direction: column;
+  align-items: start;
+}
+.when-text p:first-child {
+  margin-right: 290px;
+}
+
+.who-register {
+  background: #FF7E03;
+  color: #fff;
+}
+.who-register:hover {
+  cursor: pointer;
+  background: #fff;
+  color: #FF7E03;
+  border: 2px solid black;
+}
+
+.block-who {
+  padding-bottom: 69px;
+}
+
+.get-text {
+  width: 700px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 138px;
+}
+
+.get-list {
+  margin-bottom: 113px;
+}
+
+.list {
+  font-family: "Fira Sans";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 32px;
+  display: flex;
+  margin-left: 35px;
+  margin-top: 112px;
+  width: 1040px;
+  justify-content: space-between;
+}
+
+.ul-list {
+  display: flex;
+  margin-left: 35px;
+}
+
+.item {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 19px;
+  display: block;
+  margin-top: 29px;
+}
+
+.list-item:last-child {
+  margin-right: 0;
+}
+.list-item:nth-child(2) {
+  margin-left: 65px;
+}
+
+a {
+  color: white;
+}
+
+.organizers-text {
+  margin-top: 105px;
+  margin-left: auto;
+  margin-right: auto;
+  width: 940px;
+}
+
+.organizers-text p {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: 200;
+  font-size: 16px;
+  margin-bottom: 37px;
+  line-height: 24px;
+}
+
+.footer {
+  padding-bottom: 61px;
+  max-width: 1180px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.social-media {
+  display: flex;
+  width: 940px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.socials {
+  display: flex;
+  list-style-type: none;
+  align-items: center;
+}
+
+.socials-item {
+  margin-right: 25px;
+}
+
+.socials-text {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  color: #000000;
+}
+
+.explore {
+  width: 206px;
+  height: 46px;
+  font-family: "Open Sans";
+  font-style: normal;
+  font-weight: 800;
+  font-size: 14px;
+  border: none;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.copyright {
+  margin-top: 127px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.copy {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 15px;
+  color: #000000;
+}
+
+.email {
+  font-family: "Source Sans Pro";
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  text-align: right;
+  color: #FF7E03;
+}
+
+/*# sourceMappingURL=style.css.map */
